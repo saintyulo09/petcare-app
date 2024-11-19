@@ -1,0 +1,668 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 15%;
+    background-color: #50604e; /* Sidebar Background */
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sidebar ul li a img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0); /* Ensures icons are colored black */
+}
+
+/* Main Content and Header Styling */
+.main-content {
+    margin-left: 15%;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7e8e78;
+    padding: 10px;
+    color: black;
+}
+
+.header .logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.header .logo h1 {
+    display: inline-block;
+    font-size: 24px;
+}
+
+.user-settings img {
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+}
+
+/* Form Container Styling */
+form {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #50604e;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Input and Textarea Styling */
+form input,
+form select,
+form textarea {
+    width: 95%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    outline: none;
+    border-color: #637c62;
+}
+
+/* Button Styling */
+button {
+    background-color: #637c62;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #556a55;
+}
+
+/* Full Width Button for Forms */
+button.book-btn,
+button.save-btn {
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Responsive Rows for Form Fields */
+form .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .row .field {
+    flex: 1;
+    margin-right: 20px;
+}
+
+form .row .field:last-child {
+    margin-right: 0;
+}
+
+form .full-width {
+    width: 100%;
+}
+
+/* Profile Image Upload Section */
+.profile-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.profile-image {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+}
+
+.profile-image label img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* Calendar and Appointments Specific Styling */
+
+/* Appointments Styling */
+.appointments {
+    margin-top: 20px;
+}
+
+.appointment {
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.appointment img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.details h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.details p {
+    margin: 0;
+    font-size: 14px;
+    color: gray;
+}
+
+/* Calendar Styling */
+.calendar {
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.calendar-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.calendar-controls button {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.calendar-controls button:hover {
+    background-color: #e0e0e0;
+}
+
+.calendar-body {
+    margin-top: 20px;
+}
+
+.calendar-body table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar-body th, .calendar-body td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.calendar-body th {
+    background-color: #7e8e78;
+    color: white;
+}
+
+.calendar-body td {
+    background-color: white;
+    position: relative;
+    cursor: pointer;
+}
+
+.calendar-body td:hover {
+    background-color: #f0f0f0;
+}
+
+.booked-date::after {
+    content: "•";
+    color: green;
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+}
+
+.highlight {
+    background-color: #d2e5c8;
+    border: 1px solid #6D7F63;
+}
+
+/* Pet Section Styling */
+.pets-section {
+    margin-top: 20px;
+}
+
+.pet-item {
+    background-color: #637c62;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.pet-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.pet-item a:hover {
+    text-decoration: underline;
+}
+
+/* Add Pet Button */
+.add-pet-btn {
+    background-color: #637c62;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.add-pet-btn:hover {
+    background-color: #556a55;
+}
+
+.add-pet-btn:active {
+    background-color: #495945;
+}
+.booked-date {
+    position: relative;
+}
+.booked-date::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: green; /* Change color as needed */
+    border-radius: 50%;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.booked-date .dot {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: green;
+    border-radius: 50%;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.highlight {
+    background-color: #c3e6cb; /* Highlight color for selected date */
+}
+/* Adjusting the appointment-item layout */
+/* Appointment Item - Hover Effect */
+.appointment-item {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Default shadow */
+    border: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    margin-top: 20px; /* Adjust as needed for spacing */
+    padding-top: 20px; /* Adjust as needed for padding */
+}
+/* Hover state for the appointment item */
+.appointment-item:hover {
+    transform: translateY(-5px); /* Slightly lift the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Style for the details of the appointment (left-aligned) */
+.appointment-details {
+    flex: 1;
+}
+
+/* Adjusting the button container to align buttons to the right */
+.appointment-actions {
+    display: flex;
+    gap: 20px; /* Space between the buttons */
+}
+
+button {
+    background-color: #637c62;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #556a55;
+}
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px; /* Adds space between the buttons */
+    margin-top: 20px;
+}
+.bookmark-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.bookmark-btn img {
+    width: 32px;
+    height: 32px;
+}
+
+.bookmark-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Adds a light hover effect */
+    border-radius: 50%;
+}
+.records-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.record-btn {
+    width: 300px;
+    padding: 15px;
+    background-color: #4f4f4f;
+    border-radius: 25px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.record-btn:hover {
+    background-color: #ddd;
+}
+.vaccination-details {
+    margin: 20px;
+}
+
+.top-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.search-form input {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 250px;
+}
+
+.add-btn {
+    background-color: #556a55;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.add-btn:hover {
+    background-color: #3c493c;
+}
+
+.vaccination-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.vaccination-table th, .vaccination-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.vaccination-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.vaccination-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.vaccination-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.vaccination-table img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.booster-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.booster-table th, .vaccination-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.booster-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.booster-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.booster-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.booster-table img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.deworming-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.deworming-table th, .vaccination-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.deworming-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.deworming-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.deworming-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.deworming-table img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.rabies-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.rabies-table th, .vaccination-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.rabies-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.rabies-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.rabies-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.rabies-table img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.edit-vaccination-form {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    max-width: 500px;
+}
+
+.edit-vaccination-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.edit-vaccination-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.edit-vaccination-form input[type="text"],
+.edit-vaccination-form input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.edit-vaccination-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-vaccination-form button:hover {
+    background-color: #45a049;
+}
+
+
